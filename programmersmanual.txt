@@ -37,3 +37,13 @@ Set up:
 
 UI decisions will come later
 I want to get the functionality down first
+
+
+
+5/11/22
+
+I started the project at 8 AM
+
+I wrote the three pages and added most (all?) functionality to the application
+Now I need to style the aplpication 
+And then package the application with Electron
