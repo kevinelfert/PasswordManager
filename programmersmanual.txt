@@ -1,18 +1,17 @@
 Schema
 
-    Entry:
+    Login:
         String: Company name (required)
         String: company website 
         String: username or email address (required)
         String: password (required)
 
-need a db decision 
-    -mysql
-    -mongodb
+    User:
+        String: username 
+        String: password
+        String: confirmation password
 
-need to be able to store the data locally in a hosted file
-dont know if mongo can do this 
-
+Using json server
 
 Set up:
     
@@ -21,29 +20,25 @@ Set up:
 
     once user is logged in 
         - list of company names
-            - alphabetically sorted 
-            - able to type to search also 
+            - alphabetically sorted (need to do)
+            - able to type to search also (DONE)
     
     User clicks on company 
         - page should display
-            - company name 
-            - company website (if there is one)
-                - a button to open the browser to website 
-            - username or email address for the account 
-            - password for the account 
-                - password should also have a button using the password generator concept to generate passwords 8 - 14 chars long
+            - company name (DONE)
+            - company website (if there is one) (DONE)
+                - a button to open the browser to website (need to do)
+            - username or email address for the account (DONE)
+            - password for the account (DONE)
+                - password should also have a button using the password generator concept to generate passwords 8 - 14 chars long (need to do)
 
-            - a save button to save the entry or updates to the db
+            - a save button to save the entry or updates to the db (DONE)
 
 UI decisions will come later
 I want to get the functionality down first
 
-
-
 5/11/22
 
-I started the project at 8 AM
-
-I wrote the three pages and added most (all?) functionality to the application
-Now I need to style the aplpication 
-And then package the application with Electron
+Most of the funtionality is done
+I need to style the application
+Then package the application in Electron
