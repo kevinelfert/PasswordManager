@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "username": "kevin",
+      "password": "hellotheremynameiskevin",
+      "passwordConfirm": "hellotheremynameiskevin",
+      "logins": [],
+      "id": 1
+    },
+    {
+      "username": "jeff",
+      "password": "mynamajeffmynamajeff",
+      "passwordConfirm": "mynamajeffmynamajeff",
+      "logins": [],
+      "id": 2
+    },
+    {
+      "username": "mike",
+      "password": "mikeismynameweedismygame",
+      "passwordConfirm": "mikeismynameweedismygame",
+      "logins": [],
+      "id": 3
+    }
+  ]
+}

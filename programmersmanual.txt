@@ -1,0 +1,39 @@
+Schema
+
+    Entry:
+        String: Company name (required)
+        String: company website 
+        String: username or email address (required)
+        String: password (required)
+
+need a db decision 
+    -mysql
+    -mongodb
+
+need to be able to store the data locally in a hosted file
+dont know if mongo can do this 
+
+
+Set up:
+    
+    users need a main password    
+        - 20-25 chars long (something they can remember)
+
+    once user is logged in 
+        - list of company names
+            - alphabetically sorted 
+            - able to type to search also 
+    
+    User clicks on company 
+        - page should display
+            - company name 
+            - company website (if there is one)
+                - a button to open the browser to website 
+            - username or email address for the account 
+            - password for the account 
+                - password should also have a button using the password generator concept to generate passwords 8 - 14 chars long
+
+            - a save button to save the entry or updates to the db
+
+UI decisions will come later
+I want to get the functionality down first
