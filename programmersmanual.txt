@@ -40,5 +40,6 @@ I want to get the functionality down first
 5/11/22
 
 Most of the funtionality is done
+Most of the error handling is done
 I need to style the application
 Then package the application in Electron
