@@ -6,11 +6,14 @@ user needs to log in to see paswords
 */
 
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const Login = () => {
 
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+
+    const history = useHistory()
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -21,7 +24,8 @@ const Login = () => {
         .then(users => {
             users.forEach((user) => {
                 if(username===user.username && password===user.password){
-                    console.log("Logged In")
+                    console.log("Logged In with id: " + user.id)
+                    history.push("/users/"+user.id)
                 }
             })
         })
@@ -48,7 +52,9 @@ const Login = () => {
             
             <br />
             {/* Register needs to send user to register page */}
-            <button>Register</button>
+            <button onClick={() => {
+                history.push('/register')
+            }}>Register</button>
         </div>
      );
 }

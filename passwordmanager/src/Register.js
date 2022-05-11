@@ -12,6 +12,7 @@ redirect user to login page
 
 */
 import { useState } from "react"
+import { useHistory } from "react-router-dom"
 
 
 const Register = () => {
@@ -20,6 +21,8 @@ const Register = () => {
     const [password, setPassword] = useState('')
     const [passwordConfirm, setPasswordConfirm] = useState('')
     const logins = []
+
+    const history = useHistory()
 
     const handleSubmit = (e) => {
         try {
@@ -71,10 +74,11 @@ const Register = () => {
                 <label className="length">password length: {passwordConfirm.length}</label>
                 <br />
                 <button>Sign Up</button>
-                <p>{username}</p>
-                <p>{password}</p>
-                <p>{passwordConfirm}</p>
             </form>
+
+            <button onClick={() =>{
+                history.push('/')
+            }}>Back to Login Page</button>
         </div>
      );
 }
