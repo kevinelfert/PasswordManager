@@ -30,16 +30,8 @@
     },
     {
       "user_id": "1",
-      "company": "Hulu",
-      "website": "",
-      "username": "kelf96@gmail.com",
-      "password": "r24k24",
-      "id": 2
-    },
-    {
-      "user_id": "1",
       "company": "Amazon",
-      "website": "",
+      "website": "amazon.com",
       "username": "kelf96@gmail.com",
       "password": "C[qmIgsjno(5E)",
       "id": 3
@@ -55,10 +47,58 @@
     {
       "user_id": "2",
       "company": "Netflix",
-      "website": "",
+      "website": "neflix.com",
       "username": "jeff@jeff.jeff",
       "password": "jeffery",
       "id": 5
+    },
+    {
+      "user_id": "1",
+      "company": "hbo",
+      "website": "",
+      "username": "jeff",
+      "password": "jeff",
+      "id": 6
+    },
+    {
+      "user_id": "1",
+      "company": "hulu",
+      "website": "",
+      "username": "jeff",
+      "password": "jeff",
+      "id": 7
+    },
+    {
+      "user_id": "1",
+      "company": "peacock",
+      "website": "",
+      "username": "jeff",
+      "password": "jeff",
+      "id": 8
+    },
+    {
+      "user_id": "1",
+      "company": "roland",
+      "website": "",
+      "username": "jeff",
+      "password": "mynamajeff",
+      "id": 9
+    },
+    {
+      "user_id": "1",
+      "company": "ableton",
+      "website": "",
+      "username": "jeff",
+      "password": "jeff",
+      "id": 10
+    },
+    {
+      "user_id": "1",
+      "company": "UAD",
+      "website": "uaudio.com",
+      "username": "kevin",
+      "password": "password123",
+      "id": 11
     }
   ]
 }

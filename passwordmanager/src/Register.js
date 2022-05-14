@@ -51,7 +51,7 @@ const Register = () => {
     }
 
     return ( 
-        <div className="register">
+        <div className="register-form">
             <form onSubmit={handleSubmit}>
                 <label>Username: </label>
                 <input 
@@ -73,12 +73,13 @@ const Register = () => {
                 />
                 <label className="length">password length: {passwordConfirm.length}</label>
                 <br />
-                <button>Sign Up</button>
+                <p className="password-warning">Password needs to be between 20 and 25 characters</p>
+                <button class="waves-effect waves-light btn-small">Sign Up</button>
             </form>
 
             <button onClick={() =>{
                 history.push('/')
-            }}>Back to Login Page</button>
+            }} class="waves-effect waves-light btn-small">Back to Login Page</button>
         </div>
      );
 }

@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 code {
@@ -17,6 +20,29 @@ select{
   font-size: large;
 }
 
+
 .length{
   font-size: small;
+}
+
+.select{
+  float: left;
+  width: 50%;
+}
+
+.login-info{
+  margin-left: 55%;
+  margin-right: 5%;
+}
+
+.password-warning{
+  font-size: smaller;
+}
+
+.register-form, .login-form{
+  float: left;
+}
+
+.waves-effect{
+  margin-bottom: 1em;
 }

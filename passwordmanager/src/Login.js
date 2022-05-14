@@ -45,7 +45,7 @@ const Login = () => {
                     type="password" 
                     onChange={(e) => setPassword(e.target.value)}
                 />
-                <button>Login</button>
+                <button class="waves-effect waves-light btn-small">Login</button>
             </form>
 
 
@@ -54,7 +54,7 @@ const Login = () => {
             {/* Register needs to send user to register page */}
             <button onClick={() => {
                 history.push('/register')
-            }}>Register</button>
+            }} class="waves-effect waves-light btn-small">Register</button>
         </div>
      );
 }

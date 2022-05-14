@@ -4,6 +4,9 @@
 import Select from "react-select"
 import { useHistory, useParams } from "react-router-dom"
 import { useState } from "react"
+const validator = require('url-validator12')
+const os = require('os')
+const { exec } = require('child_process')
 
 const MainPage = () => {
 
@@ -107,6 +110,7 @@ const MainPage = () => {
                         setPassword(login.password)
                         setLoginID(login.id)
                         setUpdate(true)
+
                     }
                 })
             })
@@ -117,6 +121,28 @@ const MainPage = () => {
 
     const logout = () => {
         history.push('/')
+    }
+
+    const goToWebsite = (e) => {
+        //opens in a new tab
+        //might need to open in a new window
+        e.preventDefault()
+        const win = window.open('http://'+website, '_blank')
+        win.focus()
+
+        // const url = 'http://'+website
+        // let command;
+        // // if (osPlatform === 'win32') {
+        // //     command = `start microsoft-edge:${url}`;
+        // // } 
+        // // else if (osPlatform === 'darwin') {
+        //     command = `open -a "Google Chrome" ${url}`;
+        // // } 
+        // // else {
+        // //     command = `google-chrome --no-sandbox ${url}`;
+        // // }
+        // // console.log(`executing command: ${command}`);
+        // exec(command)
     }
 
     return ( 
@@ -168,12 +194,11 @@ const MainPage = () => {
                         value={loginID}
                     />
                     <br />
-                    
-                    {!update && <button onClick={handleSubmit}>Save Login Info</button>}
-                    {update && <button onClick={handleUpdate}>Update Login Info</button>}
+                    {!update && <button class="waves-effect waves-light btn-small" onClick={handleSubmit}>Save Login Info</button>}
+                    {validator.verify("http://"+website) ? <button class="waves-effect waves-light btn-small" onClick={goToWebsite}>Go to Website</button> : null}
+                    {update && <button class="waves-effect waves-light btn-small" onClick={handleUpdate}>Update Login Info</button>}
                 </form>
-
-                <button onClick={logout}>Log Out</button>
+                <button class="waves-effect waves-light btn-small" onClick={logout}>Log Out</button>
             </div>
         </div>
      );

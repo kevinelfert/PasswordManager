@@ -43,3 +43,24 @@ Most of the funtionality is done
 Most of the error handling is done
 I need to style the application
 Then package the application in Electron
+
+
+5/13
+
+Styles today 
+going to work in css to make the application look nice
+Mostly going to use Materialize css 
+
+going to add a 'go to website' button
+but i should check if the website field contains a valid url to show the button
+
+found a package called url-validator12
+
+need to add http:// before all the website urls for the validator to work
+done
+
+migtrated the react app to electron
+I need to ensure the 'open website' button opens a web broswer instead of a new electron window
+
+I'm running into trouble with the db
+the json server needs to be running for the app to work so i must find a way around that
